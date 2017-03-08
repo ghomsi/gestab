@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Interface équipement</title>
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" href="bootstrap.min.css"/>
+		<link rel="stylesheet" href="style.css"/>
+		<link rel="stylesheet" href="styleindex.css"/>
+	</head>
+	<body>	
+		<div class="container">
+		<header class="row">
+			<div class="col-sm-12 center-element">
+				<img src="images/logo1.png" class="img-responsive center-element" alt="Logo" />	
+			</div>
+			<div class="col-sm-6">
+				<h1 class="text-primary no-margin pull-left" >Mode d'emploi</h1>
+			</div>
+			<div  class="col-sm-6">
+				<form class="pull-right">
+						<input type="text" style="width:150px" class="input-small" placeholder="Recherche">
+						<button type="submit" class="btn btn-primary btn-xs">
+							<span class="glyphicon glyphicon-eye-open"></span> Chercher
+						</button>
+				</form>
+			</div>
+		</header>
+		<div class="row">
+			<nav class="col-sm-3" style="border: 1px solid grey; height:500px; margin-top:10px">
+				<h2 class="text-center">Guide d'emploi</h2>
+				<ul class="navigation" id="menu">
+					<li class="down"><a href="index.html">Accueil</a></li>
+					<li class="open-close down"><a href="#">Installation</a>
+						<ul class="sous-menu">
+							<li><a href="installationSousWindows.html">Installation sous Windows</a></li>
+							<li><a href="installationSousLinux.html"> Installation sous Linux</a></li>
+						</ul>
+					</li>
+					<li class="open-close down"><a href="#">Présentation des interfaces</a>
+						<ul class="sous-menu">
+							<li><a href="interfaceDeConnexion.html">Interface de connexion</a></li>
+							<li><a href="interfaceEquipement.html">Interface gestion d'équipements</a></li>
+							<li><a href="interfaceUtilisateur.html">Interface gestion utilisateurs</a></li>
+							<li><a href="interfaceClient.html">Interface gestion des clients</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			<section class="col-sm-9" >
+				<h2 class="text-center">Présentation des interfaces</h2>
+				<h3 class="text-center">2° Interface équipement</h3>
+				<p class="text-justify">
+					L'interface d'administration s'occupe de <em>l'administration des équipements</em>.</br>
+					La partie administration des équipements se présente de la manière suivante:
+                                        <img src="images/administrationEquipement.PNG" class="img-responsive center-element"/>
+						Elle est identique à celle de la gestion des équipements de l'interface gestion 
+						à la seule différence que en plus de visualiser, cette interface permet également
+						 l'ajout des équipements. Il s'agit ainsi de l'ajout des secteurs, des équipements y compris 
+						 des villes grace au "+" sité à l'extrêmité supérieur gauche.
+                                                 <img src="images/etatEquipementVille.png" class="img-responsive center-element"/>
+					Ainsi que les détails sur les cartes( nombre de port de la carte, nom de la carte, ...).
+                                        <img src="images/infoCarte.PNG" class="img-responsive center-element"/>
+                                <p class="text-justify">	
+                                <h3 class="text-center">Ajout secteur</h3>
+                                Il suffit juste de cliquer sur le bouton qui se trouve en bas de la page. Il s'agit du bouton 
+                                "ajouter secteur". Une fenêtre s'ouvrira. Il s'agit du formulaire pour la création d'un secteur.
+                                Notons que pour créer un secteur il faudrait au préalable qu'il soit dans une ville.
+                                </p>        
+                                <p>
+                                <img src="images/formulaireAjoutSecteur.PNG" class="img-responsive center-element"/>
+				</p>
+				<p class="text-justify">
+					<h3 class="text-center">Ajout équipement</h3>
+                                        Pour ajouter un équipement, il doit se trouver dans un secteur. En cliquant sur le bouton ajouter un
+                                         équipement qui se trouve tout en bas de la page, une interface s'affichera. Après avoir remplir ce formulaire,
+                                         l'équipement sera effectivement ajouté.
+                                </p>
+                                <p>
+                                        <img src="images/formulaireAjoutEquipement.PNG" class="img-responsive center-element"/>
+				</p>
+				<p class="text-justify">
+					<h3 class="text-center">statut équipement</h3>
+                                        Il nous permet juste visualiser les équipements juste en cliquant sur eux.
+				</p>
+                                <p><img src="images/etatEquipementAdmin.PNG" class="img-responsive center-element"/></p>
+				
+			</section>
+		</div>
+		<footer class="row">
+			<div class="col-sm-12">
+				<p class="text-center">copyright camtel © 2016</p>
+			</div>
+		</footer>
+		</div>
+		<script type="text/javascript" src="jquery.js"></script>
+		<script type="text/javascript" src="accordeonMenu.js"></script> 
+	</body>
+</html>

@@ -1,0 +1,45 @@
+body
+{
+	font-family: Arial;
+  
+}
+
+p{
+    font-size: 14px;
+}
+
+.center-element{
+	display:block;
+	margin:0 auto;
+}
+
+.no-margin{
+	margin:0px;
+}
+
+header{
+	border-bottom: 1px dotted blue;
+}
+
+#menu a{
+	display:block;
+}
+
+
+.sous-menu{
+    padding:0;
+}
+
+.down{
+    border-bottom: 4px background solid;
+}
+
+
+footer{
+    margin-top: 40px;
+}
+
+a
+{
+    text-decoration: none;
+}

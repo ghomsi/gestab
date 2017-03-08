@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Interface client</title>
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" href="bootstrap.min.css"/>
+		<link rel="stylesheet" href="style.css"/>
+		<link rel="stylesheet" href="styleindex.css"/>
+	</head>
+	<body>	
+		<div class="container">
+		<header class="row">
+			<div class="col-sm-12 center-element">
+				<img src="images/logo1.png" class="img-responsive center-element" alt="Logo" />	
+			</div>
+			<div class="col-sm-6">
+				<h1 class="text-primary no-margin pull-left" >Mode d'emploi</h1>
+			</div>
+			<div  class="col-sm-6">
+				<form class="pull-right">
+						<input type="text" style="width:150px" class="input-small" placeholder="Recherche">
+						<button type="submit" class="btn btn-primary btn-xs">
+							<span class="glyphicon glyphicon-eye-open"></span> Chercher
+						</button>
+				</form>
+			</div>
+		</header>
+		<div class="row">
+			<nav class="col-sm-3" style="border: 1px solid grey; height:500px; margin-top:10px">
+				<h2 class="text-center">Guide d'emploi</h2>
+				<ul class="navigation" id="menu">
+					<li class="down"><a href="index.html">Accueil</a></li>
+					<li class="open-close down"><a href="#">Installation</a>
+						<ul class="sous-menu">
+							<li><a href="installationSousWindows.html">Installation sous Windows</a></li>
+							<li><a href="installationSousLinux.html"> Installation sous Linux</a></li>
+						</ul>
+					</li>
+					<li class="open-close down"><a href="#">Présentation des interfaces</a>
+						<ul class="sous-menu">
+							<li><a href="interfaceDeConnexion.html">Interface de connexion</a></li>
+							<li><a href="interfaceEquipement.html">Interface gestion d'équipements</a></li>
+							<li><a href="interfaceUtilisateur.html">Interface gestion utilisateurs</a></li>
+							<li><a href="interfaceClient.html">Interface gestion des clients</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			<section class="col-sm-9" >
+				<h2 class="text-center">Présentation des interfaces</h2>
+				<h3 class="text-center">4° Interface de gestion</h3>
+
+				
+                                    <div class="text-center">L'interface de gestion des clients se présente de manière suivante:</div>
+                                    <p><img src="images/gestionClient.PNG" class="img-responsive center-element"/></p>
+                                <p class="text-justify">
+                                    Elle permet de faire la recherche des clients, l'ajout des clients ainsi que le 
+                                    le stage du point de vu nombre de clients.
+				</p>
+                                
+                                    <h3 class="text-center">Recherche et ajout d'un abonné</h3>
+                                    <p class="text-justify">
+                                        En ce qui concerne la recherche d'un abonné en vue d'obtenir des informations sur lui, modifier un ou
+                                        plusieurs de ses paramètres ou bien encore vérifier son existence,
+                                        c'est une opération assez simple. Il suffit juste d'entrer le numéro du client faisant l'objet 
+                                        de la recherche dans le champ de texte se situant tout en haut et à droite; Puis cliquer sur le bouton 
+                                        "Rechercher".
+                                    </p>
+                                    <p class="text-justify">
+                                         L'ajout d'un abonné est une opération simple à réaliser. Il suffit juste de cliquer sur le bouton 
+                                    "ajouter un client" qui se trouve tout à gauche du bas de la page, et remplir le formulaire de la page 
+                                    qui s'affichera pour entrer les informations du client.
+                                    </p>
+                                    
+                                    <p><img src="images/formulaireAjoutClient.PNG" class="img-responsive center-element"/></p>
+                                        <h3 class="text-center">Informations sur le client</h3>
+                                        <p class="text-justify">
+                                            En haut tout à gauche de notre interface Gestion client, se trouve un bloc ayant pour titre ville. 
+                                            En cliquant sur une ville,on peut voir le nombre de clients de cette ville entre parenthèses ainsi que 
+                                            les clients représentés par leur nom. En cliquant juste un le nom d'un client, on obtient les informations
+                                             sur ce dernier et des opérations possibles à la suite de cette sélection sont : la suppression ou la modification
+                                              de cet abonné.
+                                        </p>
+                                        
+                                        <p><img src="images/infoClient.PNG" class="img-responsive center-element"/></p>
+			
+				
+					<h3 class="text-center">Information sur la ville en fonction des clients</h3>
+                                        <p class="text-justify">
+                                            Lorsqu'on sélection une villes sur le le bloc principal on peut observer les informations 
+                                            des clients sur cette ville. Il s'agit ici du nombre de clients de cette ville, le nombre de clients suspendus
+                                             ainsi que le nombre de clients qui sont OK.
+                                        </p>
+                                        <p><img src="images/etatClientVille.PNG" class="img-responsive center-element"/></p>
+
+				
+		
+			</section>
+		</div>
+		<footer class="row">
+			<div class="col-sm-12">
+				<p class="text-center">copyright camtel © 2016</p>
+			</div>
+		</footer>
+		</div>
+		<script type="text/javascript" src="jquery.js"></script>
+		<script type="text/javascript" src="accordeonMenu.js"></script> 
+	</body>
+</html>
